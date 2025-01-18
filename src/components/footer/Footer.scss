@@ -1,0 +1,85 @@
+.footer {
+    background-color: #0b0b0b;
+    color: #ddd;
+    padding: 40px 20px;
+    text-align: center;
+  
+    &__container {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 40px;
+      margin-bottom: 20px;
+  
+      .footer__section {
+        flex: 1;
+        min-width: 200px;
+  
+        h3 {
+          font-size: 18px;
+          margin-bottom: 15px;
+        }
+  
+        ul {
+          list-style: none;
+          padding: 0;
+          margin: 0;
+  
+          li {
+            margin-bottom: 10px;
+  
+            a {
+              color: #ddd;
+              text-decoration: none;
+              font-size: 14px;
+              transition: color 0.3s;
+  
+              &:hover {
+                color: #ff0000;
+              }
+            }
+          }
+        }
+      }
+    }
+  
+    &__bottom {
+      background-color: #111;
+      padding: 10px 0;
+      color: #aaa;
+      font-size: 14px;
+      text-align: center;
+    }
+  }
+  
+  // Responsivlik uchun media queries
+  
+  @media (max-width: 768px) {
+    .footer {
+      padding: 30px 15px;
+  
+      &__container {
+        flex-direction: column;
+        gap: 30px;
+      }
+  
+      &__bottom {
+        font-size: 12px;
+      }
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .footer {
+      padding: 20px 10px;
+  
+      &__container {
+        gap: 20px;
+      }
+  
+      &__bottom {
+        font-size: 10px;
+      }
+    }
+  }
+  
