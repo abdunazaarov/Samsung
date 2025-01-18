@@ -4,7 +4,7 @@ import phone1 from "../../assets/phone1.png"
 import phone2 from "../../assets/phone2.png"
 import phone3 from "../../assets/phone3.png"
 import phone4 from "../../assets/phone4.png"
-import phone5 from "../../assets/phone5.png"
+import phone5 from "../../assets/galaxy1.jpg"
 
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -23,10 +23,10 @@ function Carousel() {
         }}
         modules={[Navigation, Autoplay]} 
         className="carousel container">
-          <SwiperSlide><img className="carousel__img" src={phone1} alt="" /></SwiperSlide>
-          <SwiperSlide><img className="carousel__img" src={phone2} alt="" /></SwiperSlide>
-          <SwiperSlide><img className="carousel__img" src={phone3} alt="" /></SwiperSlide>
-          <SwiperSlide><img className="carousel__img" src={phone4} alt="" /></SwiperSlide>
+          <SwiperSlide><img className="carousel__img" src={phone5} alt="" /></SwiperSlide>
+          <SwiperSlide><img className="carousel__img" src={phone5} alt="" /></SwiperSlide>
+          <SwiperSlide><img className="carousel__img" src={phone5} alt="" /></SwiperSlide>
+          <SwiperSlide><img className="carousel__img" src={phone5} alt="" /></SwiperSlide>
           <SwiperSlide><img className="carousel__img" src={phone5} alt="" /></SwiperSlide>
         </Swiper>
       </>
